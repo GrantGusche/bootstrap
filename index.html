@@ -68,7 +68,7 @@
         <!-- Use a container class that will set a max-width at each breakpoint -->
         <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Section heading</h2>
+          <h2 class="mb-4">Section heading</h2>
           <!-- Using the grid system, adjust the following so that the text is 100% until the large breakpoint when it will then span 10 columns -->
           <div class="">
             <div>
@@ -80,9 +80,10 @@
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section id="two-column-section">
+      <section id="two-column-section" class="text-bg-dark p-3">
+      
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
           <h2>Section heading</h2>
           <!-- Using the grid system, adjust the following so that the text in both divs are 100% until the small breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands -->
@@ -98,29 +99,14 @@
       
       <section id="cards" class="py-3">
         
-        <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/abstract.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <img src="images/abstract.jpg" class="card-img-top" alt="...">
-            <div class="card-body"> -->
-             
-
-        <!-- Use a container class that will set a max-width at each breakpoint -->
+       <!-- Use a container class that will set a max-width at each breakpoint -->
         <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
           <h2 class="mb-4">Section heading</h2>
 
           <!-- Using the grid system, adjust the following so that the cards are 100% until the small breakpoint where it then divides to use 6 columns each, then again at the large breakpoint each card will span 3 columns each -->
+          <div class="row">
+            <div class="col-lg-10">
           <!-- Add a gutter y using the value 4 -->
           <div class="row">
             <div class="col-sm-6 col-lg-3">
@@ -178,7 +164,7 @@
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section>
+      <section class="text-bg-dark p-3">
         <!-- Use a container class that will set a max-width at each breakpoint -->
         <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
@@ -187,7 +173,7 @@
           <div>
             <div>
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img src="images/abstract.jpg" class="img-fluid"  class="rounded float-start" alt="..." >
             </div>
             <div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
@@ -198,7 +184,7 @@
           <div>
             <div>
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img src="images/abstract.jpg" class="img-fluid" alt="">
             </div>
             <div>
               <div>
@@ -212,19 +198,25 @@
       <!-- Add padding to the top and bottom of the section -->
       <section>
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Pick any Bootstrap component and explore</h2>
+          <h2 class="mb-4">Pick any Bootstrap component and explore</h2>
           <p>Within the available space, choose any component from Bootstrap and showcase it here. It can be as simple or complicated as you like but must stay within the div below.</p>
           <div>
             <!-- Place component here.  -->
+            <select class="form-select" aria-label="Default select example">
+              <option selected>YOU WIN! PICK YOUR PRIZE</option>
+              <option value="1">lol</option>
+              <option value="2">Just</option>
+              <option value="3">Kidding</option>
+            </select>
           </div>
         </div>
       </section>
     </main>
 
     <!-- Set background color to use the dark theme with light text -->
-    <footer>
+    <footer class="text-bg-dark p-3">
       <!-- Use a container class that will set a max-width at each breakpoint -->
       <!-- Center align text -->
       <!-- Add padding to the top and bottom using value 3 -->
